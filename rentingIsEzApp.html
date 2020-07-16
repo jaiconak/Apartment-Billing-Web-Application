@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- END section
+    <script>
+        $(document).ready(function () {
+
+
+            $("#btn2").click(function () {
+                $("fieldset").append(" <div class=\"form-group\">\n" +
+                    "                        <input type=\"text\" class=\"form-control py-3 reverse mt-4 mt-4\" placeholder=\"Bill Name\">\n" +
+                    "                    </div>\n" +
+                    "                    <div class=\"form-group\">\n" +
+                    "                        <input type=\"text\" class=\"form-control py-3 reverse\" placeholder=\"Bill Amount\">\n" +
+                    "                    </div>");
+            });
+        });
+    </script>
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/css/helpers.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/landing-2.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+    <div class="container">
+        <a class=" mt-1 navbar-brand" href="index.html">RentingIsEasy</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
+                aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+            <ul class="navbar-nav ml-auto">
+                <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="index.html"><span
+                        class="pb_font-14 text-uppercase pb_letter-spacing-1">Back To Home</span></a></p>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section>
+
+    <div class="container mt-lg-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 relative align-self-center">
+
+
+                <form name="input" action="sendMail.php" class="bg-white rounded pb_form_v1" method="post"
+                      autocomplete="off">
+
+
+                    <h2 class="mb-4 mt-0 text-center">Fill in the required blanks</h2>
+                    <p> Stuck? Come check out the <a href="Steps.html"> step by step page</a>
+                    </p>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse"
+                               placeholder="How many roommates do you have?" name="roommateNum" required>
+                    </div>
+
+                    <div class="form-group">
+                        Enter The All The Bills Needed. When finished leave the other spaces blank
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName1">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill1">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName2">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill2">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName3">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName4">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill4">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName5">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill5">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName6">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill6">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName7">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill7">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control py-3 reverse" placeholder="Bill Name" id="billName8">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control py-3 reverse" placeholder="Bill Amount" id="bill8">
+                    </div>
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <p id="billing1"></p>
+                        <p id="billing2"></p>
+                        <p id="billing3"></p>
+                        <p id="billing4"></p>
+                        <p id="billing5"></p>
+                        <p id="billing6"></p>
+                        <p id="billing7"></p>
+                        <p id="billing8"></p>
+                    </div>
+                    <div class="form-group">
+                        <p id="billingName1"></p>
+
+                    </div>
+
+                    <script type="text/javascript">
+
+
+                        function sumValues() {
+                            var num1, num2, num3, num4, num5, num6, num7, num8, res, num1Name, num2Name, num3Name,
+                                num4Name, num5Name, num6Name, num7Name, num8Name;
+
+                            if ((document.input.bill1.value != null) && (document.input.billName1.value != null)) {
+                                num1 = Math.ceil((Number(document.input.bill1.value) / (document.input.roommateNum.value))*100)/100;
+                                document.input.billResult1.value = num1;
+                                num1Name = String(document.input.billName1.value);
+                                document.input.nameBilling.value = num1Name;
+
+
+                            }
+                            if ((document.input.bill2.value != null) && (document.input.billName2.value != null)) {
+                                num2 = Math.ceil((Number(document.input.bill2.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult2.value = num2;
+                                num2Name = String(document.input.billName2.value);
+                                document.input.nameBilling2.value = num2Name;
+
+                            }
+                            if ((document.input.bill3.value != null) && (document.input.billName3.value != null)) {
+                                num3 = Math.ceil((Number(document.input.bill3.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult3.value = num3;
+                                num3Name = String(document.input.billName3.value);
+                                document.input.nameBilling3.value = num3Name;
+
+                            }
+                            if ((document.input.bill4.value != null) && (document.input.billName4.value != null)) {
+                                num4 = Math.ceil((Number(document.input.bill4.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult4.value = num4;
+                                num4Name = String(document.input.billName4.value);
+                                document.input.nameBilling4.value = num4Name;
+
+                            }
+                            if ((document.input.bill5.value != null) && (document.input.billName5.value != null)) {
+                                num5 = Math.ceil((Number(document.input.bill5.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult5.value = num5;
+                                num5Name = String(document.input.billName5.value);
+                                document.input.nameBilling5.value = num5Name;
+
+                            }
+                            if ((document.input.bill6.value != null) && (document.input.billName6.value != null)) {
+                                num6 = Math.ceil((Number(document.input.bill6.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult6.value = num6;
+                                num6Name = String(document.input.billName6.value);
+                                document.input.nameBilling6.value = num6Name;
+
+                            }
+                            if ((document.input.bill7.value != null) && (document.input.billName7.value != null)) {
+                                num7 = Math.ceil((Number(document.input.bill7.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult7.value = num7;
+                                num7Name = String(document.input.billName7.value);
+                                document.input.nameBilling7.value = num7Name;
+
+                            }
+                            if ((document.input.bill8.value != null) && (document.input.billName8.value != null)) {
+                                num8 = Math.ceil((Number(document.input.bill8.value) / (document.input.roommateNum.value))*100)/100
+                                document.input.billResult8.value = num8;
+                                num8Name = String(document.input.billName8.value);
+                                document.input.nameBilling8.value = num8Name;
+                            }
+                            res = num1 + num2 + num3 + num4 + num4 + num5 + num6 + num7 + num8;
+                            document.input.totalPerPerson.value = res;
+                            document.input.totalPaypalNumber.value=res;
+                        }
+                    </script>
+
+                    <input type="button" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue"
+                           value="Calculate" onclick="sumValues()">
+
+<!-- SECTION START (RESULT PAGE)-->
+                    <div>
+                        <h2 class="mb-1 mt-0 text-center">Report Page</h2>
+                        Bill 1(Per Person)<br>
+                        <input type="text" name="nameBilling" readonly><br>  <!--BILL NAME1 -->
+                        <input type="text" name="billResult1" readonly><br>
+                        Bill 2(Per Person)<br>
+                        <input type="text" name="nameBilling2" readonly><br> <!--BILL NAME2 -->
+                        <input type="text" name="billResult2" readonly><br>
+                        Bill 3(Per Person)<br>
+                        <input type="text" name="nameBilling3" readonly><br> <!--BILL NAME3 -->
+                        <input type="text" name="billResult3" readonly><br>
+                        Bill 4(Per Person)<br>
+                        <input type="text" name="nameBilling4" readonly><br> <!--BILL NAME4 -->
+                        <input type="text" name="billResult4" readonly><br>
+                        Bill 5(Per Person)<br>
+                        <input type="text" name="nameBilling5" readonly><br> <!--BILL NAME5 -->
+                        <input type="text" name="billResult5" readonly><br>
+                        Bill 6(Per Person)<br>
+                        <input type="text" name="nameBilling6" readonly><br> <!--BILL NAME6 -->
+                        <input type="text" name="billResult6" readonly><br>
+                        Bill 7(Per Person)<br>
+                        <input type="text" name="nameBilling7" readonly><br> <!--BILL NAME7 -->
+                        <input type="text" name="billResult7" readonly><br>
+                        Bill 8(Per Person)<br>
+                        <input type="text" name="nameBilling8" readonly><br> <!--BILL NAME8 -->
+                        <input type="text" name="billResult8" readonly><br>
+
+                        In Total Each person will pay: $<input type="text" name="totalPerPerson" readonly><br>
+<!--                        Variable Testing: <input type="text" name="txtres"><br>-->
+
+
+                    </div>
+                    <!-- SECTION END (RESULT PAGE)-->
+                    <div>
+                        <p> Stuck? Come check out the <a href="Steps.html"> step by step page</a></p>
+
+                            <h2 class="mb-1 mt-0 text-center">Fill Information To Send to recipients</h2>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control py-3 reverse" placeholder="What is your paypal Username?" id="PaypalUserName">
+                        </div>
+
+                        <!-- Button -->
+                        <input type="button" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue"
+                               value="GetLink" onclick="printLink()">
+
+                        <!-- Showing Information -->
+                        <div>
+
+                            <!--Shows UserName -->
+                            Link:<input type="text" name="unPaypal" readonly><br>
+                            Total:   <input type="text" id="totalPaypalNumber" readonly><br>
+
+
+                        </div>
+                        <script type="text/javascript">
+
+                            function printLink(){
+                                var paypalName, userGet, totalAmount,link;
+
+                                paypalName = String (document.input.PaypalUserName.value);
+                                // document.input.unPaypal.value = paypalName;
+
+                                userGet = document.getElementById("PaypalUserName").value;
+                                totalAmount = document.getElementById("totalPaypalNumber").value;
+                                link = "paypal.me/" + userGet + "/" + totalAmount;
+                                document.input.unPaypal.value = link;
+                            }
+
+
+                        </script>
+
+<!--
+                        <script>
+                            function printLink() {
+
+
+
+                                num1Name = String(document.input.billName1.value);
+                                document.input.nameBilling.value = num1Name;
+
+                                var paypalName = String (document.input.PayPalUserName.value);
+                                document.input.PaypalUserName.value = paypalName;
+                                var userGet = document.getElementById("PaypalUserName").value;
+                                var totalAmount = document.getElementById("totalPaypalNumber").value;
+                                var link = "paypal.me/" + userGet + "/" + totalAmount;
+                                document.input.displayLink.value = link;
+                            }
+                        </script>
+                        -->
+
+
+
+
+                        <!-- User Name:<input type="text" name="paypalName" readonly><br> -->
+                    </div>
+                    <field>
+                        <div class="form-group">
+                            <input type="text" class="form-control py-3 reverse" placeholder="What email do you want to send this to?" name="email">
+                        </div>
+                    </field>
+                    <input type="submit" value="Send Email">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</section>
+
+</body>
+</html>
